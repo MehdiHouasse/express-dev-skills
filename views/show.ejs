@@ -1,0 +1,7 @@
+<!-- Your show view code -->
+<h1>Skill Details</h1>
+<p>Skill: <%= skill.skill %></p>
+<p>Level: <%= skill.level %></p>
+<form action="/skills/<%= skill.id %>?_method=DELETE" method="POST">
+  <button type="submit">Delete Skill</button>
+</form>

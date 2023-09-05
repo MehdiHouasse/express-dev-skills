@@ -1,8 +1,100 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Style the header */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style the navigation links */
 a {
-  color: #00B7FF;
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Style the container for skills */
+ul {
+  list-style: none;
+}
+
+/*the skills list */
+ul li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/*the "Add Skill" button */
+button[type="submit"] {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/*form input */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/*the form button */
+button[type="submit"] {
+  background-color: #85b0df;
+}
+
+/* top of the form */
+form {
+  margin-top: 20px;
+}
+
+/*the "Home" button */
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.home-button:hover {
+  background-color: #2980b9;
+}
+
+/* CSS code to style the "Add Skill" link as a button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8360b5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2980b9;
 }
