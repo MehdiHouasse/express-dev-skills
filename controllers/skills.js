@@ -1,12 +1,12 @@
-let skills = [
-  { id: 1, skill: 'JavaScript', level: 'Intermediate' },
-  { id: 2, skill: 'React.js', level: 'Advanced' },
-  { id: 3, skill: 'Node.js', level: 'Intermediate' }
-];
+const Skill = require('../models/skills');
 
 // Function to get all skills
-function getAll() {
-  return skills;
+function index(req, res) {
+  console.log('hey');
+  res.render("skills/index", {
+    skills: Skill.getAll(),
+    title: 'All skills'
+  });
 }
 
 // Function to add a new skill
@@ -25,7 +25,7 @@ function deleteSkill(id) {
 }
 
 module.exports = {
-  getAll,
+  index,
   addSkill,
   deleteSkill,
 };

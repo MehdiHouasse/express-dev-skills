@@ -11,7 +11,7 @@ function getAll() {
 
 // Function to add a new skill
 function addSkill(skill) {
-  skill.id = skills.length + 1; // Generate a new ID (you might want to handle this differently)
+  skill.id = skills.length + 1;
   skills.push(skill);
 }
 

@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const skillsData = require('../models/skills'); // Import skills data
-
+const skillsControl = require('../controllers/skills');
 
 // Display the form for adding a new skill
+router.get('/', skillsControl.index)
 router.get('/new', function (req, res) {
   res.render('skills/new');
 });
